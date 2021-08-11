@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: 'montserrat', sans-serif;
+}
+
+a {
+  color: #03030C;
+}
+
+.navigasi {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  font-size: .8em;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.navigasi header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigasi header .company {
+  font-weight: bold;
+  padding: 1em;
+}
+
+.navigasi header .about-item {
+  margin-top: .2em;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: white;
+  top: 3em;
+  width: 14.15em;
+  z-index: 1;
+  left: 0;
+}
+
+.navigasi header .about:hover .about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigasi header .about-item li:hover {
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.navigasi header .about {
+  position: relative;
+}
+
+.navigasi header ul {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigasi header ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.halaman-pertama {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.halaman-pertama .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.halaman-pertama .slide .img-bg {
+  margin-top: 1em;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.halaman-pertama .slide h1 {
+  text-transform: uppercase;
+  font-size: .9em;
+  color: white;
+  width: 25em;
+  padding: .7em;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 60%;
+  left: 10%;
+  position: absolute;
+}
+
+.halaman-pertama .slide h1 span {
+  display: block;
+}
+
+.halaman-pertama .arrow .kiri {
+  cursor: pointer;
+  border-radius: 1em;
+  font-size: 2em;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 10px;
+  top: 50vh;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  position: absolute;
+}
+
+.halaman-pertama .arrow .kanan {
+  cursor: pointer;
+  border-radius: 1em;
+  font-size: 2em;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50vh;
+  right: 10px;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  position: absolute;
+}
+
+.halaman-pertama .dots {
+  width: 100%;
+  position: absolute;
+  top: 90%;
+}
+
+.halaman-pertama .dots ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.halaman-pertama .dots ul li {
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.halaman-pertama .dots ul li .dot1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.halaman-pertama .dots ul li .dot2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 1em;
+  background-color: grey;
+}
+
+.halaman-kedua {
+  width: 100%;
+  height: 100%;
+}
+
+.halaman-kedua h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.halaman-kedua .konten-kontainer {
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+.halaman-kedua .konten-kontainer h3 {
+  text-transform: uppercase;
+}
+
+.halaman-kedua .konten-kontainer .inovatif {
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  position: relative;
+  background-color: #FD8779;
+  border: 5px solid #E25243;
+  position: relative;
+}
+
+.halaman-kedua .konten-kontainer .inovatif .segi3pink {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 19px solid transparent;
+  border-top-color: #E25243;
+  top: 100%;
+  right: 46%;
+}
+
+.halaman-kedua .konten-kontainer .loyalty {
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  position: relative;
+  background-color: #6A996F;
+  border: 5px solid #557B59;
+  position: relative;
+}
+
+.halaman-kedua .konten-kontainer .loyalty .segi3ijo {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 19px solid transparent;
+  border-top-color: #557B59;
+  top: 100%;
+  right: 46%;
+}
+
+.halaman-kedua .konten-kontainer .respect {
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  border: 5px solid #3b7399;
+  background-color: #5696C2;
+}
+
+.halaman-ketiga {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+}
+
+.halaman-ketiga h1 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.halaman-ketiga .form {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.halaman-ketiga .form .form-container {
+  width: 50%;
+  padding: 1em;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.halaman-ketiga .form .form-container .input {
+  width: 100%;
+  padding: .5em;
+}
+
+.halaman-ketiga .form .form-container .btn {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 103%;
+  padding: .5em;
+  color: white;
+  background-color: #5696C2;
+  border: none;
+  margin-bottom: 1em;
+}
+
+.footer {
+  padding: 1em;
+  background-color: #03030C;
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.footer p {
+  font-size: 10px;
+  margin: 0;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-left: .5em;
+}
+
+.footer ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.arrow .kanan:hover {
+  background-color: white;
+  color: #333333;
+}
+
+.arrow .kiri:hover {
+  background-color: white;
+  color: #333333;
+}
+
+.navigasi-bar li:hover {
+  background-color: rgba(51, 51, 51, 0.09);
+}
+/*# sourceMappingURL=style.css.map */
